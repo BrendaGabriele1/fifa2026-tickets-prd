@@ -51,6 +51,10 @@ interface ImportMetaEnv {
   readonly VITE_CIAM_AUTHORITY?: string;
   /** Application (client) ID da App Registration SPA criada pelo aluno no tenant CIAM. */
   readonly VITE_CIAM_CLIENT_ID?: string;
+  /** Application (client) ID da App Registration SPA no tenant Entra workforce. */
+  readonly VITE_ENTRA_CLIENT_ID?: string;
+  /** GUID do tenant Entra workforce do aluno. */
+  readonly VITE_ENTRA_TENANT_ID?: string;
   /** Scope exposto pela App Registration (ex.: api://<client-id>/purchase.write). */
   readonly VITE_ENTRA_SCOPE?: string;
   /** Base URL do gateway YARP v2 (Container App). Ex.: https://gateway-xy.azurecontainerapps.io */
