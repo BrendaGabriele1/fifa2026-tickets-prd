@@ -91,8 +91,8 @@ const redirectUri = import.meta.env.VITE_ENTRA_REDIRECT_URI ?? window.location.o
 // Scope da API exposta pela App Registration SPA no tenant CIAM (ex.:
 // api://<client-id>/purchase.write). Fallback para o formato padrão se
 // VITE_ENTRA_SCOPE não estiver definido (reaproveitado da convenção de 2.3).
-const clientId = import.meta.env.VITE_ENTRA_CLIENT_ID ?? '';
-const tenantId = import.meta.env.VITE_ENTRA_TENANT_ID ?? '';
+const clientId = import.meta.env.VITE_ADMIN_CLIENT_ID ?? '';
+const tenantId = import.meta.env.VITE_ADMIN_TENANT_ID ?? '';
 // Authority do tenant workforce (NÃO 'common' — alinhado ao gateway fail-closed AC-6).
 const authority = tenantId
   ? https://login.microsoftonline.com/${tenantId}
