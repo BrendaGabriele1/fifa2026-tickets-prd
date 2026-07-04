@@ -62,7 +62,7 @@ on:
 env:
   # --- migrations ---
   DEFAULT_SQL_SERVER: 'sql-dev-tk-cin-001'
-  DEFAULT_RESOURCE_GROUP: 'rg-hml-tik-cin-001'
+  DEFAULT_RESOURCE_GROUP: 'rg-prd-tik-cin-001'
   # --- gateway ---
   GATEWAY_PROJECT_PATH: 'src/Fifa2026.V2.Gateway'
   GATEWAY_TEST_PATH: 'src/Fifa2026.V2.Gateway.Tests'
