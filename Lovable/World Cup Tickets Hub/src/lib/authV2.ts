@@ -100,9 +100,8 @@ const authority = tenantId
   : 'https://login.microsoftonline.com/organizations';
 
 // Scope da API exposta pela App Registration (ex.: api://<client-id>/purchase.write).
-const apiScope =
-  import.meta.env.VITE_ADMIN_SCOPE ??
-  (adminClientId ? `api://${adminClientId}/purchase.write` : 'openid');
+// Garante que usamos a App Registration do CIAM e nunca a do Admin
+const apiScope = ciamClientId ? `api://${ciamClientId}/purchase.write` : 'openid';
 
 /** True quando as variáveis mínimas de identidade v2 estão configuradas. */
 export const isEntraConfigured = (): boolean =>
